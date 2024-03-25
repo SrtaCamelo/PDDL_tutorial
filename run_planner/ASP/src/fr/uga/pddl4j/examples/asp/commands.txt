@@ -1,0 +1,17 @@
+
+# Compile
+javac -d classes -cp lib/pddl4j-4.0.0.jar src/fr/uga/pddl4j/examples/asp/ASP.java
+#Run help
+java -cp classes:lib/pddl4j-4.0.0.jar fr.uga.pddl4j.examples.asp.ASP --help
+
+java -cp classes:lib/pddl4j-4.0.0.jar fr.uga.pddl4j.examples.asp.ASP
+     src/fr/uga/pddl4j/examples/asp/domain.pddl
+     src/fr/uga/pddl4j/examples/asp/p01.pddl
+     -e FAST_FORWARD
+     -w 1.2
+     -t 1000
+
+
+
+ASP [-hV] [-e=FAST_FORWARD] [-l=ALL] [-t=1000] [-w=1.2]
+         /src/fr/uga/pddl4j/examples/asp/domain.pddl /src/fr/uga/pddl4j/examples/asp/p01.pddl
